@@ -6,3 +6,4 @@ dir /b %SystemRoot%\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools
 
 for /f %%i in ('findstr /i . List.txt 2^>nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i" 
 pause
+shutdown -s
